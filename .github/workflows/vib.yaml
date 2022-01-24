@@ -24,6 +24,7 @@ jobs:
 
   cp-k8s-verify: # verify in multiple target platforms
     runs-on: ubuntu-latest
+    environment: vmware-image-builder
     needs: [cp-validate]
     strategy:
       matrix:
